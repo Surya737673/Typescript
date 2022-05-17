@@ -39,7 +39,7 @@ const user3:User={
 
 let arr:User[]=[user1,user2,user3]
 
-function sort(arr:User[],q:string):User[]{
+function sort(arr:User[],q:keyof User):User[]{
     const n=arr.length;
     for(let i=0; i<n; i++){
         for(let j=0; j<n;j++){
