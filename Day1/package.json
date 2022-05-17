@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "typescript": "^4.6.4"
+  },
+  "name": "typescript",
+  "description": "Advance react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc index.ts",
+    "build:watch": "tsc index.ts --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Surya737673/Typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Surya737673/Typescript/issues"
+  },
+  "homepage": "https://github.com/Surya737673/Typescript#readme"
+}
