@@ -50,9 +50,9 @@ const Laptop = () => {
     },[])
 
     function Sort(arr:lappyType[],q:keyof lappyType){
-      const len = arr.length;
-      for(let i=0;i<len;i++){
-          for(let j=i+1;j<len;j++){
+      const n = arr.length;
+      for(let i=0;i<n;i++){
+          for(let j=i+1;j<n;j++){
               if(arr[i][q]>arr[j][q]){
                   let temp = arr[i];
                   arr[i] = arr[j];
@@ -61,6 +61,19 @@ const Laptop = () => {
           }
       }
       return arr
+  }
+  function handlefilter(OS: string) {
+    axios
+      .get("http://localhost:8080/data")
+      .then((response: AxiosResponse<lappyType[]>) => {
+        let { data } = response;
+        if (OS !== "all") {
+          data = data.filter((el) => el.OS === OS);
+          setlappyData([...data]);
+        } else {
+          setlappyData([...data]);
+        }
+      });
   }
   return (
       <>
@@ -91,6 +104,12 @@ const Laptop = () => {
             <option value="year">year</option>
             <option value="price">price</option>
         </select>
+        <label>Filter-by</label>
+        <button  onClick={()=>handlefilter("windows")}>Windows</button>
+        <button  onClick={()=>handlefilter("mac")}>Mac</button>
+        <button  onClick={()=>handlefilter("dos")}>Dos</button>
+        <button  onClick={()=>handlefilter("all")}>All</button>
+        <button  onClick={()=>handlefilter("linux")}>Linux</button>
         <table>
             <thead>
                 <tr>

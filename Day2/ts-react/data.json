@@ -1,5 +1,24 @@
 {
   "data": [
-   
+    {
+      "Id": "1",
+      "model": "purana",
+      "year": "2014",
+      "OS": "windows",
+      "height": "17",
+      "width": "18",
+      "price": "50000",
+      "id": 1
+    },
+    {
+      "Id": "2",
+      "model": "naya",
+      "year": "2015",
+      "OS": "Dos",
+      "height": "15",
+      "width": "17",
+      "price": "40000",
+      "id": 2
+    }
   ]
 }
