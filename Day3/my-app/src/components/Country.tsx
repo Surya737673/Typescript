@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import useFetch from "../hooks/useFetch"
+import "./countries.css"
 type Data={
     country:string,
     city:string,
@@ -14,8 +15,9 @@ const Country = () => {
         
     })
   return (
-    <div>
+    <div id="Maindiv">
         <input type="text" value={text} onChange={(e)=>setText(e.target.value)} />
+        <div id='country'>
         {
           data.map((item)=>(
               <div>
@@ -23,6 +25,7 @@ const Country = () => {
               </div>
           ))
         }
+        </div>
     </div>
   )
 }

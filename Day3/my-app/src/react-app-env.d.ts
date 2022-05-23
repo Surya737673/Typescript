@@ -1,1 +1,7 @@
-/// <reference types="react-scripts" />
+import React from 'react'
+
+const useMergeState = () => {
+ 
+}
+
+export default useMergeState

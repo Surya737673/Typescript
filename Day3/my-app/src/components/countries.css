@@ -1,0 +1,13 @@
+#Maindiv{
+    /* border:solid; */
+    margin: auto;
+    text-align: center;
+    width:550px;
+}
+#country{
+    overflow-y: scroll;
+    max-height: 350px;
+}
+#country::-webkit-scrollbar{
+    width:0;
+}
