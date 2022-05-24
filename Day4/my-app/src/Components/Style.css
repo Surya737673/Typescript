@@ -1,0 +1,39 @@
+.container{
+    border: solid black;
+    margin: auto;
+    width:35%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.input{
+    /* margin-left: -5%; */
+    width: 90%;
+    height: 20px;
+    font-size: 15px;
+}
+.area{
+    font-size: 15px;
+    width: 90%;
+}
+.color{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+.data-container{
+    display: flex;
+    gap: 2%;
+    width: 90%;
+    margin: auto;
+}
+.div{
+    width: 80%;
+}
+.p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.body{
+    font-weight: 100;
+    font-size: 25px;
+}
