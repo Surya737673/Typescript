@@ -1,0 +1,15 @@
+.accodian{
+    width: 20%;
+    text-align: justify;
+    margin: auto;
+}
+.h4{
+    /* color: rgb(76, 226, 174); */
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    font-weight: bold;
+}
+p{
+    /* color: rgb(219, 41, 192); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
