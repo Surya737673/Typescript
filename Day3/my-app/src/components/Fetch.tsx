@@ -3,7 +3,7 @@ import useFetch from '../hooks/useFetch';
 
 type User={
   id:string;
-  login:string;
+  login:string; 
   avatar_url:string;
 }
 

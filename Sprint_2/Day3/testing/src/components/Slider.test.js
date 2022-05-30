@@ -22,7 +22,7 @@ describe("Test Slider",()=>{
         fireEvent.click(next)
         expect(question).toHaveTextContent("Dusra Sawal")
     })
-    xit("Should disable next button",()=>{
+it.only("Should disable next button",()=>{
         render(<Slider/>)
         let next=screen.getByText("Next")
         fireEvent.click(next)
